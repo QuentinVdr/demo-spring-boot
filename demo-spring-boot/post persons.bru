@@ -1,0 +1,18 @@
+meta {
+  name: post persons
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/persons
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "firstname": "test",
+    "lastname": "test"
+  }
+}
